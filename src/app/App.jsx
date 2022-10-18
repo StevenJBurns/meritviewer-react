@@ -45,13 +45,13 @@ export const App = props => {
   const changeCurrentMerit = newMerit => setCurrentMerit(newMerit);
 
   return (
-    <AppDataContext.Provider value={
-      { currentAppData,
-        changeCurrentCategory,
-        changeCurrentGroup,
-        changeCurrentMerit,
-      }
-    }>
+    <AppDataContext.Provider value={{
+      currentAppData,
+      changeCurrentCategory,
+      changeCurrentGroup,
+      changeCurrentMerit,
+      }}
+      >
       <EmpireThemeContext.Provider value={{ theme, changeTheme }}>
         { props.children }
       </EmpireThemeContext.Provider>
