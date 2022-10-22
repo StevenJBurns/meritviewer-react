@@ -16,8 +16,8 @@ export const App = props => {
   React.useEffect(() => {
     localStorage.setItem('empire', empire);
 
-    /* bail out early and set appData to AppData is empire is 'ALL' */
-    if(empire === 'ALL') {
+    /* bail out early and set appData to AppData if empire is 'ALL' */
+    if (empire === 'ALL') {
       setCurrentAppData(AppData);
       setTheme(themes['ALL']);
       return;
