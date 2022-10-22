@@ -1,12 +1,4 @@
-import { Empire } from '../Empire';
-
-interface IMerit {
-  rank: number,
-  title: string,
-  availability: Empire,
-  completionRequirements: Record<string, number>,
-  imagePath: string,
-};
+import { IMerit } from './Merit.entity';
 
 export class Merit implements IMerit {
   #rank;

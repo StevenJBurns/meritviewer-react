@@ -1,2 +1,2 @@
 export { Empire } from './Empire.model';
-export {} from './Empire.store';
+export type { IEmpireStore } from './Empire.store';

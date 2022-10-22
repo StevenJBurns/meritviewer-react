@@ -1,4 +1,4 @@
-import { Merit } from '../Merit/Merit';
+import { Merit } from '../Merit';
 
 interface ICategory {
   title: string;

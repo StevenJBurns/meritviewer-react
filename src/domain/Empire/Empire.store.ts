@@ -1,5 +1,11 @@
 import { Empire } from './Empire.model';
 
+export interface IEmpireStore {
+  merits: Array<Empire>;
+  isPending: boolean;
 
-
-export const EmpireStore = {};
+  setInitialState(): Promise<Empire>;
+  add(): () => void;
+  update(): () => void;
+  remove(): () => void;
+};
