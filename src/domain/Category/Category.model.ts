@@ -1,23 +1,17 @@
-import { Merit } from '../Merit';
-
-interface ICategory {
-  title: string;
-  type: string;
-  description: string;
-  merits: Array<Merit>,
-};
+import { ICategory} from './Category.entity';
+import { Group } from '../';
 
 export class Category implements ICategory {
   #title: string;
   #type: string;
   #description : string;
-  #merits: Array<Merit>;
+  #groups: Array<Group>;
   
   constructor(args: ICategory) {
     this.#title = args.title;
     this.#type = args.type;
     this.#description = args.description;
-    this.#merits = [...args.merits];
+    this.#groups = [...args.groups];
   };
 
   public get title() {
@@ -32,7 +26,8 @@ export class Category implements ICategory {
     return this.#description;
   };
 
-  public get merits() {
-    return this.#merits;
+  public get groups() {
+    return this.#groups;
   };
 };
+

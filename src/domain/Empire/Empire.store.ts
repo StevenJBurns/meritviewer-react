@@ -5,6 +5,7 @@ export interface IEmpireStore {
   isPending: boolean;
 
   setInitialState(): Promise<Empire>;
+  
   add(): () => void;
   update(): () => void;
   remove(): () => void;
