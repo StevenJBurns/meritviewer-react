@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { EmpireThemeContext } from '../../context/theme/empireThemeContext';
-import { EmpireFilterToolbar } from '../../components/EmpireFilterToolbar/EmpireFilterToolbar';
-import { CategoryContainer } from '../../components/CategoryContainer/CategoryContainer';
+import { EmpireThemeContext } from '../../../context/theme/empireThemeContext';
+import { EmpireFilterToolbar } from '../../EmpireFilterToolbar/EmpireFilterToolbar';
+import { CategoryContainer } from '../../CategoryContainer/CategoryContainer';
 import './AppMain.scss';
 
 export const AppMain = props => {

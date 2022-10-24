@@ -1,9 +1,10 @@
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 /* import * as serviceWorker from './serviceWorker'; */
-import { App } from './app/App';
-import { AppMain } from './app/AppMain/AppMain';
-import { AppHeader } from './app/AppHeader/AppHeader';
-import { AppFooter } from './app/AppFooter/AppFooter';
+import { App } from './components/app/App';
+import { AppMain } from './components/app/AppMain/AppMain';
+import { AppHeader } from './components/app/AppHeader/AppHeader';
+import { AppFooter } from './components/app/AppFooter/AppFooter';
 import './index.scss';
 
 import { EMPIRES } from './constants/EMPIRES';

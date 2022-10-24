@@ -1,5 +1,5 @@
 import React from 'react';
-import { EmpireThemeContext } from '../../context/theme/empireThemeContext';
+import { EmpireThemeContext } from '../../../context/theme/empireThemeContext';
 
 import './AppFooter.scss';
 

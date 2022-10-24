@@ -1,8 +1,8 @@
 import React from 'react';
-import AppData from '../data/meritviewer.json';
-import { AppDataContext } from '../context/data/AppDataContext';
-import { EmpireThemeContext } from '../context/theme/empireThemeContext';
-import { themes } from '../context/theme/empireThemes';
+import AppData from '../../data/meritviewer.json';
+import { AppDataContext } from '../../context/data/AppDataContext';
+import { EmpireThemeContext } from '../../context/theme/empireThemeContext';
+import { themes } from '../../context/theme/empireThemes';
 import './App.scss';
 
 export const App = props => {
@@ -21,7 +21,7 @@ export const App = props => {
       setCurrentAppData(AppData);
       setTheme(themes['ALL']);
       return;
-    };
+    }
 
     /* use map and filter to drill down to the Merit level in AppData */
     let filteredMerits = AppData.map(category => 
