@@ -18,9 +18,10 @@
   },
   "plugins": [
     "react",
-    "prettier",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
+    "semi": 0
   }
 }
